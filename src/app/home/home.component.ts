@@ -33,7 +33,7 @@ export class HomeComponent implements OnInit {
 
   openDialog() {
     const dialogRef = this.dialog.open(ProjectFormComponent, {
-      width: '500px',
+      width: '600px',
       maxHeight: '90vh',
       disableClose: true,
       panelClass: 'custom-dialog',
@@ -54,7 +54,7 @@ export class HomeComponent implements OnInit {
     this.projectService.getprojectId(id).subscribe({
       next: (projectData) => {
         const dialogRef = this.dialog.open(ProjectFormComponent, {
-          width: '500px',
+          width: '600px',
           maxHeight: '90vh',
           disableClose: true,
           panelClass: 'custom-dialog',
