@@ -2,6 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { ProjectApiService } from '../service/project-api.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-project-form',
@@ -16,6 +17,7 @@ export class ProjectFormComponent implements OnInit {
     private fb: FormBuilder,
     private dialogRef: MatDialogRef<ProjectFormComponent>,
     private projectService: ProjectApiService,
+    private route: Router,
     @Inject(MAT_DIALOG_DATA) public data: any
   ) {}
 
@@ -118,6 +120,11 @@ export class ProjectFormComponent implements OnInit {
     } else {
       alert('Form is invalid. Please fill all required fields.');
     }
+  }
+
+  onView() {
+    this.route.navigate(['Blog']);
+    this.dialogRef.close('success');
   }
 
   closeDialog() {

@@ -1,0 +1,26 @@
+.container {
+  margin-top: 50px;
+}
+.container a {
+  text-decoration: none;
+  color: rgb(29, 29, 29);
+  padding: 5px;
+  font-size: medium;
+  /* margin-top: 50px; */
+  border-radius: 10px;
+}
+.container a :hover {
+  background-color: rgb(114, 113, 113);
+}
+.left-box {
+  padding: 30px;
+}
+.right-box {
+  border-radius: 15px;
+  padding: 30px;
+  background-color: rgb(226, 223, 223, 0.5);
+}
+.Head {
+  color: rgb(34, 34, 133);
+  margin-top: 20px;
+}

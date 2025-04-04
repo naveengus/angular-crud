@@ -13,9 +13,10 @@ import { ProjectFormComponent } from './project-form/project-form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ProjectListComponent } from './project-list/project-list.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, ProjectFormComponent],
+  declarations: [AppComponent, HomeComponent, ProjectFormComponent, ProjectListComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
