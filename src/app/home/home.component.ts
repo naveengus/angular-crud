@@ -46,10 +46,6 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  editProject(id: string) {
-    console.log();
-  }
-
   onEdit(id: string) {
     this.projectService.getprojectId(id).subscribe({
       next: (projectData) => {

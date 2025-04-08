@@ -11,7 +11,7 @@ const routes: Routes = [
     children: [
       { path: '', component: AllProjectComponent },
       { path: 'AllProject', component: AllProjectComponent },
-      { path: 'projectView', component: ProjectViewComponent },
+      { path: 'projectView/:id', component: ProjectViewComponent },
     ],
   },
 ];

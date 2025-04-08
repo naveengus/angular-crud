@@ -32,6 +32,7 @@ export class ProjectFormComponent implements OnInit {
 
   initializeForm() {
     this.projectForm = this.fb.group({
+      id: [''],
       projectName: ['', Validators.required],
       Description: ['', Validators.required], // Lowercase for consistency
       Technologies: this.fb.array([], Validators.required),
@@ -122,8 +123,8 @@ export class ProjectFormComponent implements OnInit {
     }
   }
 
-  onView() {
-    this.route.navigate(['Blog']);
+  onView(id: string) {
+    this.route.navigate(['Blog/projectView/', id]);
     this.dialogRef.close('success');
   }
 
